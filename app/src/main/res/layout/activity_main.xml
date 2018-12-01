@@ -22,15 +22,16 @@
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="524dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="308dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="20dp"
-        android:gravity="fill_horizontal"
+        android:gravity="center"
         android:text="ZFS is a combined file system and logical volume manager designed and implemented by a team at Sun Microsystems led by Jeff Bonwick and Matthew Ahrens. Its development started in 2001 and it was officially announced in 2004. In 2005 it was integrated into the main trunk of Solaris and released as part of OpenSolaris. Currently, as of January 2015, it is native to Solaris, OpenSolaris, OpenIndiana, illumos, Joyent SmartOS, OmniOS, FreeBSD, Debian GNU/kFreeBSD systems, NetBSD, OSv and supported on Mac OS with MacZFS.  "
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
