@@ -6,4 +6,9 @@
     <string name="loginButtonText">Login</string>
     <string name="toolboxContentDescription">toolbox</string>
     <string name="imageChangeButtonText">Change Image</string>
+    <string name="currency_converter">Currency Converter</string>
+    <string name="converterTitle">Converter</string>
+    <string name="currencyAmountHint">Enter Amount</string>
+    <string name="currencyOutputText">No Value</string>
+    <string name="firstToolTitle">Converter</string>
 </resources>

@@ -1,10 +1,13 @@
 package io.che.firstapp;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.os.Bundle;
@@ -20,6 +23,12 @@ public class MainActivity extends AppCompatActivity {
     protected void logger(String string) {
 
         Log.i("Info:", string);
+
+    }
+
+    public void changeActivityFunction(View view) {
+
+        startActivity(new Intent(MainActivity.this, FirstTool.class));
 
     }
 
