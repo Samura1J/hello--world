@@ -11,4 +11,9 @@
     <string name="currencyAmountHint">Enter Amount</string>
     <string name="currencyOutputText">No Value</string>
     <string name="firstToolTitle">Converter</string>
+    <string name="numbersGameDesc">Numbers Game</string>
+    <string name="numbersGameTitle">Numbers Game</string>
+    <string name="numbersGameBodyText">Enter a number between 1 and 20 for a chance to win!!!</string>
+    <string name="numbersGameHint">Guess</string>
+    <string name="numbersGameButtonText">Guess</string>
 </resources>

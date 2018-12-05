@@ -10,16 +10,17 @@
 
     <ImageView
         android:id="@+id/toolboxImageView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_width="128dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="30dp"
         android:alpha=".5"
         android:contentDescription="@string/toolboxContentDescription"
         android:scaleType="fitEnd"
         android:src="@drawable/toolbox"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.993"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
         app:srcCompat="@drawable/toolbox" />
 
     <TextView
@@ -112,26 +113,41 @@
 
     <ImageButton
         android:id="@+id/firstToolImageButton"
-        style="@android:style/Widget.Material.ImageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="40dp"
         android:adjustViewBounds="false"
-        android:background="@android:color/background_light"
+        android:background="@android:color/transparent"
         android:contentDescription="@string/currency_converter"
         android:cropToPadding="false"
         android:fadingEdge="horizontal"
         android:minWidth="40dp"
         android:minHeight="40dp"
         android:onClick="changeActivityFunction"
-        android:src="@android:drawable/btn_star"
-        android:tint="?attr/colorError"
+        android:tag="FirstTool"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:srcCompat="?attr/colorError"
-        tools:targetApi="lollipop" />
+        app:srcCompat="@drawable/dollar_flat" />
+
+    <ImageButton
+        android:id="@+id/numberGameImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/numbersGameDesc"
+        android:cropToPadding="false"
+        android:fadingEdge="horizontal"
+        android:minWidth="40dp"
+        android:minHeight="40dp"
+        android:onClick="changeActivityFunction"
+        app:layout_constraintStart_toEndOf="@+id/firstToolImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:srcCompat="@drawable/puzzle_icon" />
 
 
 </android.support.constraint.ConstraintLayout>

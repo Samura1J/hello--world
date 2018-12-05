@@ -1,10 +1,7 @@
 package io.che.firstapp;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Configuration;
-import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ImageButton;
@@ -16,19 +13,31 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
-    protected void logger(String string) {
+    protected void logger(Object string) {
 
-        Log.i("Info:", string);
+        Log.i("Info:", string.toString());
 
     }
 
     public void changeActivityFunction(View view) {
 
-        startActivity(new Intent(MainActivity.this, FirstTool.class));
+        switch(view.getId())
+        {
+            case R.id.firstToolImageButton:
+                startActivity(new Intent(MainActivity.this, FirstTool.class));
+                break;
+
+            case R.id.numberGameImageButton:
+                startActivity(new Intent(MainActivity.this, NumbersGame.class));
+                break;
+
+//            case R.id.button3:
+//                // Code for button 3 click
+//                break;
+        }
 
     }
 
@@ -109,8 +118,6 @@ public class MainActivity extends AppCompatActivity {
         toolboxImage.setFocusableInTouchMode(true);
         toolboxImage.requestFocus();
 
-//        final TextView bodyTextView = findViewById(R.id.bodyTextView);
-//        bodyTextView.setText(bodyTextView.getText().toString().replace("_", " "));
     }
 
 
