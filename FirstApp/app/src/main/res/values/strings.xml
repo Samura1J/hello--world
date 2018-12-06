@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FirstApp</string>
+    <string name="greeting">Hello</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="loginButtonText">Login</string>
+    <string name="toolboxContentDescription">toolbox</string>
+    <string name="imageChangeButtonText">Change Image</string>
+    <string name="currency_converter">Currency Converter</string>
+    <string name="converterTitle">Converter</string>
+    <string name="currencyAmountHint">Enter Amount</string>
+    <string name="currencyOutputText">No Value</string>
+    <string name="firstToolTitle">Converter</string>
+    <string name="numbersGameDesc">Numbers Game</string>
+    <string name="numbersGameTitle">Numbers Game</string>
+    <string name="numbersGameBodyText">Enter a number between 1 and 20 for a chance to win!!!</string>
+    <string name="numbersGameHint">Guess</string>
+    <string name="numbersGameButtonText">Guess</string>
+</resources>
